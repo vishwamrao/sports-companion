@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Companion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-pixabay-46798.jpg");
+            background-size: cover; /* This will cover the entire page */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Ensures the background covers the viewport height */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <img src="images-removebg-preview.png" alt="Hamburger Icon" class="hamburger-icon">
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact us</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+ <nav>
+    <div class="logo">
+        <h1>Sports Companion</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <a href="log.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </div>
+</nav>
+<section id="banner">
+    
+    <div class="banner-text">
+        <div class="text-background">
+            <div class="SC"></div><h1>SPORTS COMPANION</h1><br></div>
+            <h3>Join or create sports events around you</h3>
+        </div><br>
+        <div class="banner-btn">
+            <a href="join-event-v2.html"><span></span>Join a Sports Event</a>
+            <a href="create-event.html"><span></span>Create a Sports Event</a>
+        </div>
+    </div>
+        
+</section>
+</body>
+</html>

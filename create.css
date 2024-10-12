@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #34e89e, #0f3443); /* Gradient background */
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#create-event {
+    padding: 80px 20px 40px; /* Space for fixed header */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 28px; /* Increased font size */
+    color: #fff; /* White color for heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+    text-align: left; /* Align label to left */
+    max-width: 400px; /* Maximum width for form elements */
+    margin: 0 auto; /* Center form group */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space below label */
+    color: #fff; /* White color for labels */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%; /* Full width of container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Font size for input */
+}
+
+textarea {
+    resize: none; /* Disable resizing for textarea */
+}
+
+button {
+    padding: 10px 15px; /* Padding for button */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

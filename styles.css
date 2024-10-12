@@ -1,0 +1,208 @@
+.hamburger {
+    position: absolute;
+    top: 10px; /* Adjust distance from the top */
+    right: 10px; /* Adjust distance from the right */
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    position: absolute; /* Position it relative to the viewport */
+    top: 70px; /* Adjust based on the height of your navbar */
+    right: 10px; /* Align it to the right */
+    z-index: 10; /* Ensure it's above other elements */
+    width: 75px;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Optional: Styling the navigation menu (hidden by default) */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 125px; /* Space it below the hamburger icon */
+    right: 0;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 1px solid black;
+}
+
+.menu a:hover {
+    background-color: #444;
+}
+
+/* Show the menu when hamburger is active */
+.menu.active {
+    display: flex;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-pixabay-46798.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: white;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Auth buttons (Login & Register) */
+.auth-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons .login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.auth-buttons .register-btn {
+    background-color: #3498db;
+}
+
+.auth-buttons .register-btn:hover {
+    background-color: white;
+    color: #3498db;
+}
+
+
+#text-background {
+        display: flex;                       /* Enable flexbox */
+        justify-content: center;             /* Center horizontally */
+        align-items: center;                 /* Center vertically */
+        height: 100vh;                       /* Full viewport height */
+        text-align: center;                  /* Center text */
+        background: rgba(0, 0, 0, 0.5);     /* Optional: Add a background */
+        color: white;                        /* Text color */
+}
+    
+
+
+#banner {
+    display: flex;                          /* Enable flexbox layout */
+    flex-direction: column;                /* Arrange items in a column */
+    justify-content: center;                /* Center items vertically */
+    align-items: center;                   /* Center items horizontally */
+    height: 100vh;                         /* Full viewport height */
+    text-align: center;                    /* Center text */
+    background: rgba(0, 0, 0, 0.5);       /* Optional: Add a background */
+    color: white;                          /* Text color */
+}
+
+.banner-text {
+    max-width: 600px;                     /* Limit the width of the text */
+    margin: 0 auto;                       /* Center the text block */
+}
+
+.banner-btn {
+    display: flex;                        /* Use flexbox for buttons */
+    justify-content: center;              /* Center buttons horizontally */
+    gap: 20px;                            /* Space between buttons */
+    margin-top: 20px;                     /* Space above buttons */
+}
+
+.banner-btn a {
+    text-decoration: none;                 /* Remove underline */
+    color: white;                         /* Button text color */
+    background-color: #3498db;            /* Button background color */
+    padding: 15px 25px;                   /* Padding for buttons */
+    border-radius: 25px;                  /* Rounded corners */
+    font-size: 18px;                       /* Font size */
+    font-weight: bold;                     /* Bold text */
+    position: relative;                    /* Position for span effect */
+    overflow: hidden;                      /* Hide overflow for span */
+    transition: all 0.3s ease;            /* Smooth transition */
+}
+
+.banner-btn a:hover {
+    background-color: white;               /* Change background on hover */
+    color: #3498db;                        /* Change text color on hover */
+}
+
+.banner-btn a span {
+    position: absolute;                    /* Position for span */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+    height: 100%;                          /* Full height */
+    width: 100%;                           /* Full width */
+    left: -100%;                           /* Start off to the left */
+    top: 0;                                /* Align to the top */
+    transition: left 0.4s ease;            /* Smooth slide effect */
+}
+
+.banner-btn a:hover span {
+    left: 0;                               /* Slide in on hover */
+}
+
+#SC{
+    font-size: 8rem;                        /* Increase font size */
+    font-weight: bold;                      /* Make the text bold */
+    color: #ffffff;                         /* Text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
+    margin: 0;                              /* Remove default margin */
+    padding: 20px 0;                       /* Add some padding */
+    letter-spacing: 2px;                   /* Increase space between letters */
+    text-transform: uppercase;              /* Make text uppercase */
+    font-family: 'Arial', sans-serif;      /* Change font family if desired */
+}
+
