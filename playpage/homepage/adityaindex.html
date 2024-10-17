@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulsePlay Dashboard</title>
+  <link rel="stylesheet" href="adityastyles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hello, <span style="color: #9f3ed5">Admin PulsePlay</span></h1>
+      <div>
+        <button onclick="showToday()">Today</button>
+        <button onclick="showWeekly()">Weekly</button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search something..." />
+    </div>
+
+    <!-- Nutrition Boxes (Calories, Fat, etc.) - Below Search Bar -->
+    <div class="nutrition-boxes">
+      <div class="nutrition-box">
+        <h4>Calories</h4>
+        <p id="calories-count">2000 kcal</p>
+      </div>
+      <div class="nutrition-box">
+        <h4>Fat</h4>
+        <p>70 g</p>
+      </div>
+      <div class="nutrition-box">
+        <h4>Protein</h4>
+        <p>50 g</p>
+      </div>
+      <div class="nutrition-box">
+        <h4>Carbs</h4>
+        <p>250 g</p>
+      </div>
+    </div>
+
+    <!-- Calories and Information Side by Side -->
+    <div class="calories-info-container">
+
+      <!-- Track Calories Section (Stacked Buttons) -->
+      <div class="track-calories">
+        <div class="track-item" onclick="trackCalories('eaten')">
+          <span>Calories Eaten</span>
+          <a href="#">→</a>
+        </div>
+        <div class="track-item" onclick="trackCalories('burned')">
+          <span>Calories Burned</span>
+          <a href="#">→</a>
+        </div>
+      </div>
+
+      <!-- Info Box for Calories and BMI -->
+      <div class="info-box">
+        <h3>What are Calories & How to Track?</h3>
+        <p>Calories are a unit of energy. To maintain or lose weight, it's important to track your calorie intake and expenditure.</p>
+        <div class="bmi-form">
+          <h3>BMI Calculator</h3>
+          <input type="text" id="weight" placeholder="Weight (kg)" />
+          <input type="text" id="height" placeholder="Height (m)" />
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <p id="bmi-result" style="color: #00ff00;"></p> <!-- BMI Result Display -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Streaks and Calendar Section -->
+    <div class="bottom-section">
+      <div class="streaks-container">
+        <div class="streaks-title">Your Streaks</div>
+        <div class="streaks-image">
+            <img src="images-removebg-preview.png" alt="Streaks Image" />
+        </div>
+        <div class="streaks-dots">
+            <div class="streak-dot active"></div>
+            <div class="streak-dot active"></div>
+            <div class="streak-dot"></div>
+            <div class="streak-dot"></div>
+            <div class="streak-dot active"></div>
+        </div>
+    </div>
+    
+    </div>
+
+    <!-- Calorie Calculator Section -->
+    <div class="calorie-calculator" id="calorie-calculator">
+      <h2>Calorie Calculator</h2>
+      <input type="number" id="calories-eaten" placeholder="Calories Eaten" />
+      <button onclick="calculateCalories()">Calculate</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

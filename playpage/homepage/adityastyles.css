@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Dark Black Background */
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header button {
+    background-color: #1f1f1f;
+    border: none;
+    color: #9f9f9f;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    color: #fff;
+    background-color: #3a3b5e;
+    box-shadow: 0 0 10px 2px rgba(0, 140, 255, 0.8); /* Blue glow */
+    transform: scale(1.05);
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #1c1c1c; /* Darker input */
+    color: #fff;
+}
+
+.search-bar input::placeholder {
+    color: #9f9f9f;
+}
+
+/* Nutrition Details (Calories, Fat, etc.) - Below the Search Bar */
+.nutrition-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nutrition-box {
+    background-color: #1a1a1a; /* Darker Box */
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nutrition-box:hover {
+    background-color: #2b2b2b;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 2px rgba(0, 140, 255, 0.8); /* Blue glow */
+}
+
+.nutrition-box h4 {
+    color: #008cff; /* Blue text */
+    margin-bottom: 10px;
+}
+
+.nutrition-box p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+/* Calories and Information Side by Side */
+.calories-info-container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Track Calories Section (Stacked Buttons) */
+.track-calories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+}
+
+/* Track Calories Buttons */
+.track-item {
+    margin: 0;
+    padding: 15px;
+    background-color: #1f1f1f; /* Dark background */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.track-item:hover {
+    background-color: #3a3b5e; /* Highlight on hover */
+}
+
+.track-item span {
+    color: #fff;
+}
+
+/* Info Box for Calories and BMI */
+.info-box {
+    background-color: #1f1f1f; /* Darker Info Box */
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1; /* Occupy remaining space */
+}
+
+.info-box h3 {
+    margin: 0 0 10px;
+    color: #008cff; /* Blue text */
+}
+
+.bmi-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #9f9f9f;
+}
+
+.bmi-form button {
+    background-color: #1f1f1f;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bmi-form button:hover {
+    background-color: #3a3b5e;
+    box-shadow: 0 0 10px 2px rgba(0, 140, 255, 0.8); /* Blue glow */
+}
+
+/* Streaks and Calendar Section */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.streaks-container {
+    flex: 1; /* Take up remaining space */
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.calendar-container {
+    flex: 1; /* Take up remaining space */
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.streaks-title,
+.calendar-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #008cff; /* Blue text */
+}
+
+/* Streaks Dots */
+.streaks-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.streak-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bbb;
+}
+
+.streak-dot.active {
+    background-color: #4caf50; /* Green for active */
+}
+
+/* Calendar Days */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 5px;
+}
+
+.day {
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Calorie Calculator Section */
+.calorie-calculator {
+    margin-top: 20px;
+    background-color: #1f1f1f; /* Darker Box */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calorie-calculator input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9f9f9f;
+    margin-bottom: 10px;
+}
+
+.calorie-calculator button {
+    background-color: #1f1f1f;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calorie-calculator button:hover {
+    background-color: #3a3b5e;
+    box-shadow: 0 0 10px 2px rgba(0, 140, 255, 0.8); /* Blue glow */
+}
+/* Streaks Container */
+.streaks-container {
+    flex: 1;
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    text-align: center; /* Center the image */
+}
+
+/* Streaks Image */
+.streaks-image img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+/* Streaks Dots */
+.streaks-dots {
+    display: flex;
+    justify-content: center; /* Center the dots horizontally */
+    margin-top: 10px; /* Add some space between the image and the dots */
+    gap: 10px; /* Add some spacing between dots */
+}
+
+/* Streak Dot Styles */
+.streak-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bbb;
+}
+
+.streak-dot.active {
+    background-color: #4caf50; /* Green for active */
+}

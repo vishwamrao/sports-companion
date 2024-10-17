@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Connect</title>
+    <link rel="stylesheet" href="hemantsyle.css">
+    <meta name="description" content="Connect with fellow sports enthusiasts, find local sports venues, and join or host companion activities.">
+    <meta name="keywords" content="sports, football, cricket, volleyball, companion, host, join">
+</head>
+<body>
+    <!-- Search Bar and Menus -->
+    <header>
+        <div class="header-container">
+            <!-- Hamburger Menu -->
+            <nav class="hamburger-menu" aria-label="Main Navigation">
+                <button class="hamburger-button" aria-haspopup="true" aria-expanded="false" aria-controls="hamburgerDropdown" aria-label="Menu">
+                    <svg width="30" height="30" viewBox="0 0 100 80" fill="#333" aria-hidden="true">
+                        <rect width="100" height="15"></rect>
+                        <rect y="30" width="100" height="15"></rect>
+                        <rect y="60" width="100" height="15"></rect>
+                    </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <ul class="hamburger-dropdown" id="hamburgerDropdown" aria-label="Main Menu">
+                    <li><a href="homepage/adityaindex.html">Home</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="login/login.html">Login</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar -->
+            <input type="text" class="search-bar" placeholder="Search your sport here..." aria-label="Search Sports">
+
+            <!-- Profile Menu -->
+            <div class="profile-menu">
+                <button class="profile-button" aria-haspopup="true" aria-expanded="false" aria-controls="profileDropdown" aria-label="Profile Menu">
+                    <img src="1.luffy.png" alt="Profile" class="profile-icon">
+                </button>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" id="profileDropdown" aria-label="Profile Options">
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">My Calories</a></li>
+                    <li><a href="#">My Bookmarks</a></li>
+                    <li><a href="#">My Activities</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Famous Places Near Your Area -->
+        <section class="famous-places">
+            <h2>FAMOUS PLACES NEAR YOUR AREA</h2>
+            <div class="place-card">
+                <button class="place-card" onclick="window.location.href='football/fb.html'">
+                    <img src="arena.jpeg" alt="Football Arena" loading="lazy">
+                    <div>
+                        <h3>FOOTBALL ARENA, NOIDA</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </button>
+                
+                <button class="place-card" onclick="window.location.href='lawn/lawn.html'">
+                    <img src="lawn tennis.jpeg" alt="Table Tennis" loading="lazy">
+                    <div>
+                        <h3>UNIFIED LAWN TENNIS, FARIDABAD</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </button>
+                
+                <button class="place-card" onclick="window.location.href='badminton-court.html'">
+                    <img src="badminton court.jpeg" alt="Tennis Court" loading="lazy">
+                    <div>
+                        <h3>BADMINTON COURT, DELHI</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Looking for Companion -->
+        <section class="companion">
+            <h2>LOOKING FOR COMPANION</h2>
+            <div class="companion-buttons">
+                <button class="host-btn" onclick="document.getElementById('hostModal').style.display='block'">Host For Companion</button>
+                <button class="join-btn" onclick="document.getElementById('joinModal').style.display='block'">Join As Companion</button>
+            </div>
+        </section>
+
+        <!-- Favorite Sports Section -->
+        <section class="favorite-sports">
+            <h2>EXPLORE SPORTS</h2>
+            <div class="sports-grid">
+                <div class="sport-card">
+                    <img src="football1.jpg" alt="Football" loading="lazy">
+                    <p>FOOTBALL</p>
+                </div>
+                <div class="sport-card">
+                    <img src="cricket.jpg" alt="Cricket" loading="lazy">
+                    <p>CRICKET</p>
+                </div>
+                <div class="sport-card">
+                    <img src="volleyball.jpg" alt="Volleyball" loading="lazy">
+                    <p>VOLLEYBALL</p>
+                </div>
+                <div class="sport-card">
+                    <img src="badminton.webp" alt="Badminton" loading="lazy">
+                    <p>BADMINTON</p>
+                </div>
+                <div class="sport-card">
+                    <img src="basketball.jpg" alt="Basketball" loading="lazy">
+                    <p>BASKETBALL</p>
+                </div>
+                <div class="sport-card">
+                    <img src="dodgeball.jpg" alt="Dodgeball" loading="lazy">
+                    <p>DODGEBALL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Host Companion Modal -->
+    <div id="hostModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="hostModalTitle">
+        <div class="modal-content">
+            <button class="close-button" data-close="hostModal" aria-label="Close Modal">&times;</button>
+            <h2 id="hostModalTitle">Host for Companion</h2>
+            <form>
+                <label for="hostName">Name:</label>
+                <input type="text" id="hostName" name="hostName" required>
+
+                <label for="hostEmail">Email:</label>
+                <input type="email" id="hostEmail" name="hostEmail" required>
+
+                <label for="hostSport">Sport:</label>
+                <select id="hostSport" name="hostSport" required>
+                    <option value="" disabled selected>Select a sport</option>
+                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="kho-kho">Kho-Kho</option>
+                    <option value="handball">Handball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="dodgeball">Dodgeball</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Join Companion Modal -->
+    <div id="joinModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="joinModalTitle">
+        <div class="modal-content">
+            <button class="close-button" data-close="joinModal" aria-label="Close Modal">&times;</button>
+            <h2 id="joinModalTitle">Join as Companion</h2>
+            <form>
+                <label for="joinName">Name:</label>
+                <input type="text" id="joinName" name="joinName" required>
+
+                <label for="joinEmail">Email:</label>
+                <input type="email" id="joinEmail" name="joinEmail" required>
+
+                <label for="joinSport">Sport:</label>
+                <select id="joinSport" name="joinSport" required>
+                    <option value="" disabled selected>Select a sport</option>
+                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="kho-kho">Kho-Kho</option>
+                    <option value="handball">Handball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="dodgeball">Dodgeball</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sports Connect. All rights reserved.</p>
+    </footer>
+
+    <script src="hemantjava.js"></script>
+</body>
+</html>

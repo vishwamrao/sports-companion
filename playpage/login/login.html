@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page - Dark Theme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+        }
+        .container {
+            display: flex;
+            width: 70%;
+            height: auto;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #1e1e1e;
+        }
+        .form-section {
+            flex: 1;
+            padding: 40px 60px;
+            background-color: #1e1e1e;
+        }
+        .form-section h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #00bcd4;
+        }
+        .form-section p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #b0bec5;
+        }
+        .form-section input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+        .form-section input:focus {
+            outline: none;
+            border-color: #00bcd4;
+        }
+        .form-section button {
+            background: linear-gradient(to right, #00aaff, #007bff);
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+        .form-section button:hover {
+            background: linear-gradient(to right, #007bff, #005b96);
+        }
+        .form-section .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .form-section .social-icons a {
+            font-size: 24px;
+            color: #00bcd4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .form-section .social-icons a:hover {
+            color: #00838f;
+        }
+        .illustration-section {
+            flex: 1;
+            background-color: #121212;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .illustration-section img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+        }
+        .social-icons .x-logo svg {
+            width: 24px;
+            height: 24px;
+            fill: #00bcd4;
+            transition: fill 0.3s ease;
+        }
+        .social-icons .x-logo svg:hover {
+            fill: #00838f;
+        }
+
+        .link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #b0bec5;
+            text-align: center;
+        }
+
+        .link a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Play Pulse</h2>
+            <p>Join us and explore content tailored to your interests.</p>
+            <input type="text" name="full-name" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="interest" placeholder="Password"><br>
+            
+            <a href="../after_login/afterlogin.html">
+                <button>Log In</button>
+            </a>
+            
+
+            <p class="link">Don't have an account?<br>
+                <a href="../registerpage/register.html">Sign up</a> here</p>
+
+            <div class="social-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" class="x-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 204">
+                        <path d="M248 0L136.37 114.17L248 204H169.03L113.53 148.85L69.62 204H0L98.94 102.68L11.35 0H88.97L122.12 38.9L163.34 0H248Z"/>
+                    </svg>
+                </a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="illustration-section">
+            <img src="999aa57578d864e451875154b61e7802.jpg" alt="Illustration">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

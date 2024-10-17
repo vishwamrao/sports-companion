@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Darker background for a true dark theme */
+    color: #f5f5f5; /* Lighter text for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #1e1e1e; /* Dark grey for container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* Slightly darker shadow */
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0033ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    color: #f5f5f5; /* Ensure label text stands out */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333; /* Darker input fields */
+    color: #f5f5f5; /* Brighter text in inputs */
+}
+
+input::placeholder {
+    color: #888888; /* Softer placeholder color */
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: blue; /* Slightly darker orange for hover effect */
+}
+
+input:focus {
+    outline: 2px solid #0008ff;
+}

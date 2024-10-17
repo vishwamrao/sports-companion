@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+        label {
+            font-size: 14px;
+            margin: 10px 0;
+            display: block;
+        }
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .radio-group, .checkbox-group {
+            margin: 15px 0;
+        }
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-group input[type="checkbox"], 
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00bfa6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #00a08f;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        .checkbox-group img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .icon-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00bfa6;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .icon-button img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tell us about yourself</h2>
+
+        <label for="username">Choose your username</label>
+        <input type="text" id="username" placeholder="@username">
+
+        <label for="age">What is your age?</label>
+        <input type="number" id="age" placeholder="age">
+
+        <label for="locality">Your locality</label>
+        <input type="text" id="locality" placeholder="e.g., Ghaziabad, Uttar Pradesh">
+
+        <div class="radio-group">
+            <label>What is your gender?</label><br>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Choose at least 3 sports:</label>
+            <label><input type="checkbox" value="cricket"> <img src="cricket (1).png" alt="Cricket Icon">Cricket</label>
+            <label><input type="checkbox" value="football"> <img src="football.png" alt="Football Icon">Football</label>
+            <label><input type="checkbox" value="volleyball"> <img src="volleyball.png" alt="Volleyball Icon">Volleyball</label>
+            <label><input type="checkbox" value="lawn-tennis"> <img src="game.png" alt="Lawn Tennis Icon">Lawn Tennis</label>
+            <label><input type="checkbox" value="badminton"> <img src="badminton.png" alt="Badminton Icon">Badminton</label>
+            <label><input type="checkbox" value="hockey"> <img src="badminton.png" alt="Hockey Icon">Hockey</label>
+            <label><input type="checkbox" value="table-tennis"> <img src="ping-pong.png" alt="Table Tennis Icon">Table Tennis</label>
+            <label><input type="checkbox" value="basketball"> <img src="ball-of-basketball.png"Basketball Icon">Basketball</label>
+        </div>
+
+        <a href="../hemantindex.html">
+            <button>Done!</button>
+        </a>
+        
+    </div>
+
+</body>
+</html>
